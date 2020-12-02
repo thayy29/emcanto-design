@@ -1,0 +1,65 @@
+.btn.btn-banner {
+    border: 2px solid var(--light);
+    color: var(--light);
+}
+
+.btn.btn-banner:hover {
+    background-color: transparent;
+    color: var(--light);
+    border-color: var(--dark);
+    background-color: var(--dark);
+}
+
+.btn-profile {
+    background-color: var(--dark);
+    color: var(--light);
+    border: 1.5px solid var(--light); 
+}
+
+@media (max-width: 992px) {
+    .btn-profile {
+        margin: 19px 0 0 0;
+    }
+}
+
+.btn-profile:hover {
+    background-color: var(--primary);
+    border: 0;
+    color: var(--dark);
+    cursor: pointer;
+}
+
+.btn.btn-port {
+    background-color: transparent;
+    color: var(--light);
+    border: 2px solid var(--light);
+    background-color: transparent;
+}
+
+.btn.btn-port:hover {
+    background-color: transparent;
+    color: var(--light);
+    border-color: var(--dark);
+    background-color: var(--dark);
+}
+
+.btn.btn-submit {
+    background-color: var(--bege);
+    color: var(--orange);  
+    font-size: 25px;
+    font-weight: lighter;
+    text-transform: lowercase;
+    margin: 60px 190px;
+}
+
+@media (max-width: 768px) {
+    .btn.btn-submit {
+        margin: 40px 40px 0 0;
+        font-size: 20px;
+    }
+}
+
+.btn.btn-submit:hover {
+    background-color: transparent;
+    color: var(--primary);
+}

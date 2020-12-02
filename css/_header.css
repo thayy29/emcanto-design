@@ -1,0 +1,152 @@
+.header {
+    display: flex;
+    background-color: var(--dark);
+    color: var(--dark);
+    margin: 0;
+    padding: 30px 0;
+}
+
+ .container .header {
+    display: flex;
+}
+
+.header-logo {
+    display: inline-block;
+    align-items: center;
+    color: var(--light);
+    font-weight: normal;
+    font-size: 40px;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+@media (max-width: 992px) {
+    .header-logo {
+        font-size: 30px;
+    }
+}
+
+.header-logo span {
+    display: block;
+    color: var(--light);
+}
+
+.logo-canto span {
+    display: inline-block;
+}
+
+span.logo-title  {
+    color: var(--primary);
+}
+
+.header-menu { 
+    display: flex; 
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .header-menu {
+        position: fixed;
+        z-index: 8;
+        width: 250px;
+        height: 100%;
+        top: 0;
+        right: -250px;
+        background-color: var(--dark);
+        box-shadow: 0 0 30px rgba(0,0,0, .5);
+        opacity: 0;
+		transition: all .3s ease;
+    }
+
+    .header-menu.open {
+        right: 0;
+        opacity: 1;
+    }
+
+    .header-menu  {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;    
+		color: var(--dark);
+		border-bottom: 1px solid var(--gray);
+        background-color: rgba(0,0,0, .5);
+        padding-top: 75px;
+	}
+}
+
+.header-menu-link:hover {
+    color: var(--primary);
+    font-style: italic;
+}
+
+@media (max-width: 992px) {
+    .header-menu-link:hover {
+        color: var(--primary);
+        font-style: italic;
+    }
+}
+
+.menu-mobile {
+	display: none;
+}
+
+@media (max-width: 768px) {
+    .menu-mobile {
+        position: relative;
+        z-index: 9;
+        display: block;
+        background-color: transparent;
+        border: none;
+        font-size: 30px;
+        color: var(--light);
+    }
+}
+
+.header-menu-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--light);
+    font-size: 13px;
+    font-weight: 700;
+    padding: 20px;
+    letter-spacing: 2px;
+}
+
+.active:hover {
+    color: var(--primary);
+    font-style: oblique;
+}
+
+
+/* PORTFOLIO */
+.border {
+    border-bottom: 2px solid var(--light);
+}
+
+.port {
+    position: absolute;
+    font-style: italic;
+    letter-spacing: 2px;
+    font-weight: normal;
+}
+
+.title-sub {
+    color: var(--light);
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 13px;
+    position: relative;
+    top: 40px;
+    left: 132px;
+}
+
+.header .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-menu-port {
+    display: flex;
+    align-items: center;
+}
