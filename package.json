@@ -1,0 +1,24 @@
+{
+  "name": "emcanto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo\"Error: no test specified\"&& exit 1",
+    "sass": "sass --watch assets/sass/main.scss:assets/css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thayy29/emcanto-design.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thayy29/emcanto-design/issues"
+  },
+  "homepage": "https://github.com/thayy29/emcanto-design#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.6"
+  }
+}
